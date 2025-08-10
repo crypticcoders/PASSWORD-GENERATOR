@@ -2,7 +2,7 @@ import random
 import string
 import sys
 
-# Store usernames and passwords to avoid duplicates
+# Store usernames and passwords
 stored_passwords = {}
 
 while True:
@@ -45,7 +45,7 @@ while True:
         else:
             print("Invalid choice. Try again.")
 
-    # Remove any spaces from char_set for safety
+    # Remove spaces
     char_set = char_set.replace(" ", "")
 
     # Generate unique password
@@ -54,16 +54,13 @@ while True:
         if password not in stored_passwords.values():
             break
 
-    # Store password
     stored_passwords[purpose] = password
 
-    # Show Instagram-like format
     print(f"\n💡 Your password for {purpose} is: {password}")
     print(f"{purpose} - {password}")
     print()
     print("⚠ Please save this password. It will not be shown again!\n")
 
-    # Ask to continue
     another = input("Do you want to create another password? (y/n): ").lower()
     if another != 'y':
         print("\nAll stored passwords (for this session only):")
@@ -74,4 +71,5 @@ while True:
         sys.exit()
         
         
+
 
