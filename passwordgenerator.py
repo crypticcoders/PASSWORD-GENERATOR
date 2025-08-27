@@ -2,15 +2,12 @@ import random
 import string
 import sys
 
-# Store usernames and passwords
 stored_passwords = {}
-
 while True:
     purpose = input("Enter your purpose: ").strip()
     if purpose in stored_passwords:
         print("⚠ Username already exists. Try another.")
         continue
-
     try:
         length = int(input("Enter the length of the password you want: "))
         if length <= 0:
@@ -45,21 +42,20 @@ while True:
         else:
             print("Invalid choice. Try again.")
 
-    # Remove spaces
+    
     char_set = char_set.replace(" ", "")
 
-    # Generate unique password
     while True:
         password = ''.join(random.choice(char_set) for _ in range(length))
         if password not in stored_passwords.values():
             break
 
-    stored_passwords[purpose] = password
+stored_passwords[purpose] = password
 
-    print(f"\n💡 Your password for {purpose} is: {password}")
+    print(f"\n Your password for {purpose} is: {password}")
     print(f"{purpose} - {password}")
     print()
-    print("⚠ Please save this password. It will not be shown again!\n")
+    print("!!! Please save this password. It will not be shown again!\n")
 
     another = input("Do you want to create another password? (y/n): ").lower()
     if another != 'y':
@@ -71,5 +67,6 @@ while True:
         sys.exit()
         
         
+
 
 
