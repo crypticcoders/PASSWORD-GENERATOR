@@ -8,11 +8,12 @@ A simple **command-line password generator** that creates secure and unique pass
 ---
 
 ##  FEATURES
+
 - Generate **Moderate** (digits only) or **Hard** (letters, numbers, symbols) passwords.  
-- Prevents duplicate purposes name
-- duplicate passwords.  
+- Prevents duplicate purposes and duplicate passwords.  
+- Prints and stores passwords until the user exits.  
 - Lightweight and dependency-free.  
--prints abd stores passwords until the user exits.
+
 ---
 
 ##  INSTALLATION AND EXAMPLE FOR USER
