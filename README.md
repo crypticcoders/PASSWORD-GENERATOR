@@ -1,4 +1,4 @@
-# 🔐 Password Generator (Python)
+#  PASSWORD GENERATOR (Python)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) 
 [![Made With](https://img.shields.io/badge/Made%20With-Python-orange)](https://www.python.org/)  
@@ -7,7 +7,7 @@ A simple **command-line password generator** that creates secure and unique pass
 
 ---
 
-##  Features
+##  FEATURES
 - Generate **Moderate** (digits only) or **Hard** (letters, numbers, symbols) passwords.  
 - Prevents duplicate purposes name
 - duplicate passwords.  
@@ -15,7 +15,7 @@ A simple **command-line password generator** that creates secure and unique pass
 -prints abd stores passwords until the user exits.
 ---
 
-##  Installation
+##  INSTALLATION AND EXAMPLE FOR USER
 ```bash
 git clone https://github.com/your-username/password-generator.git
 cd password-generator
